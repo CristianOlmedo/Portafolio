@@ -1,0 +1,274 @@
+/* Estilos generales */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos del navbar */
+.navbar {
+    background-color:#ffffff;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    float: right;
+    margin-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.menu li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Estilos de las secciones */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/*Estilos de Home*/
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.hero-left {
+    flex: 1;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    gap: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons i {
+    font-size: 30px;
+    color: #007bff;
+}
+
+.hero-right {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Estilos My Skills*/
+.skills {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 20px;
+    text-align: center;
+}
+
+.skill i {
+    font-size: 60px;
+    color: #007bff; /* Cambia el color si lo deseas */
+}
+
+.skill p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/*Estilos ABOUT ME*/
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color:#ffffff;
+}
+
+.about-me-left {
+    flex: 2;
+    text-align: left;
+}
+
+.about-me-right {
+    flex: 1;
+    text-align: right;
+}
+
+.about-me-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/*Estilos de Contacts*/
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.contact-item p {
+    font-size: 18px;
+}
+
+/*Estilos Footer*/
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon:checked + .menu {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li {
+        display: block;
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .footer p {
+        margin: 0 10px;
+    }
+}
